@@ -16,7 +16,7 @@ function Nav(props) {
             onClick={props.toggleMode}
           />
           <label className="form-check-label" htmlFor="flexSwitchCheckChecked">
-            🌙
+            {props.mode === "light" ? "🌙" : "🌞"}
           </label>
         </div>
       </div>
